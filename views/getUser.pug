@@ -1,0 +1,11 @@
+extends layout
+block content
+    h1= title
+    p DN : #{users.dn}
+    table
+        each grp in users.groups
+            tr
+                td
+                    grp.cn
+                td
+                    a(href='/users/'+users.sAMAccountName+'/remove-from/'+grp.cn) Delete

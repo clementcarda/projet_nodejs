@@ -1,0 +1,10 @@
+extends layout
+block content
+    form(method='POST' action=action)
+        div
+            label(for='name') Name:
+            input#name(type='text', placeholder='name of your Group', name='name')
+        div
+            label(for='description') Description:
+            input#description(type='text', placeholder='Description of your Group', name='description')
+        button(type='submit') Create Group

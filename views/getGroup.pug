@@ -1,0 +1,6 @@
+extends layout
+block content
+    h1= group.cn
+    p DN : #{group.dn}
+    if group.description
+        p Description : #{group.description}

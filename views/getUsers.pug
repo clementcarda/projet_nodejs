@@ -1,0 +1,11 @@
+extends layout
+block content
+    h1= title
+    table
+        each user in users
+            tr
+                td
+                    a(href='/users/get/'+user.sAMAccountName) #{user.sAMAccountName}
+                td
+                    a(href='/users/delete/'+user.sAMAccountName) Delete
+    a(href='/users/create/') Create

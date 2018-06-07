@@ -1,0 +1,13 @@
+extends layout
+block content
+    form(method='POST' action=action)
+        div
+            label(for='userName') userName:
+            input#userName(type='text', placeholder='name of your User', name='userName')
+        div
+            label(for='commonName') commonName:
+            input#commonName(type='text', placeholder='your common name', name='commonName')
+        div
+            label(for='pass') Password:
+            input#pass(type='password', placeholder='your password', name='pass')
+        button(type='submit') Create User

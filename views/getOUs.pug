@@ -1,0 +1,11 @@
+extends layout
+block content
+    h1= "liste d'unité d'organisation"
+    table
+        each ou in listOU
+            tr
+                td
+                    a(href='/organization-units/get/'+ou) #{ou}
+                td
+                    a(href='/organization-units/delete/'+ou) Delete
+    a(href='/organization-units/create/') Create

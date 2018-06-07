@@ -1,0 +1,10 @@
+extends layout
+block content
+    form(method='POST' action=action)
+        div
+            label(for='name') Name:
+            input#name(type='text', placeholder='name of your OU', name='name')
+        div
+            label(for='description') Description:
+            input#description(type='text', placeholder='Description of your OU', name='description')
+        button(type='submit') Create OU

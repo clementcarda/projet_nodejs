@@ -1,0 +1,11 @@
+extends layout
+block content
+    h1= title
+    table
+        each group in groups
+            tr
+                td
+                    a(href='/groups/get/'+group.cn) #{group.cn}
+                td
+                    a(href='/groups/delete/'+group.cn) Delete
+    a(href='/groups/create/') Create
